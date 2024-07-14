@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative
+}
+
+
+/* NAVBAR START */
+
+nav {
+    height: 10px;
+    display: flex;
+    padding: 2% 6%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #575757;
+}
+
+nav img {
+    width: 100px;
+}
+
+.nav-links {
+    width: 100%;
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a,.nav-links ul li label  {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.dropdown-prop .re {
+    color: #fff;
+    margin-left: 5px;
+    transform: rotate(1s);
+}
+
+.nav-links ul li input {
+    display: none;
+}
+
+
+
+
+/* DROPDOWN START */
+/* .nav-links ul li:hover .dropdown-content {
+    display: block;
+} */
+
+.dropdown-prop .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    z-index: 1;
+}
+
+[id^=btn]:checked + label {
+    margin-bottom: 300px;
+}
+
+
+[id^=btn]:checked + label + .re {
+    transform: rotate(180deg);
+}
+
+[id^=btn]:checked + label + .re + .dropdown-content{
+    display: block;
+}
+
+.dropdown-prop .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-prop .dropdown-content a:hover {
+    background-color: #575757;
+}
+/* DROPDOWN END */
+
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ccc;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 65px;
+
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #ccc;
+    background: #ccc;
+    transition: 0.7s;
+}
+
+nav .fa {
+    display: none;
+}
+
+.wa {
+    list-style: none;
+    background-color: #25D366;
+    border-radius: 10px;
+}
+
+.wa .contact-box {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600; 
+    color: #fff;
+    position: relative;
+}
+
+.wa .contact-box i {
+    font-size: 20px;
+    margin-right: 10px; /* Memberi jarak antara ikon dan teks */
+}
+
+/* .wa .contact-box::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 100%;
+    height: 3px; 
+    background-color: green; 
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.wa .contact-box:hover::after {
+    transform: scaleX(1);
+} */
+
+
+@media(max-width: 700px) {
+    .text-box h1 {
+    font-size: 23px;
+    }
+
+    nav {
+        height: 30px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #ccc;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    .wa .contact-box {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 600; 
+        color: #fff;
+        position: relative;
+    }
+    
+    .wa .contact-box i {
+        font-size: 30px;
+        margin-right: 10px; /* Memberi jarak antara ikon dan teks */
+    }
+}
+/* NAVBAR END */
+
+/* CARD START */
+.content {
+    box-sizing: border-box;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card {
+    width: 350px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    color: #575757;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.card-info {
+    display: block;
+    align-items: center;
+    font-size: 15px;
+    margin: 12px 0 25px 0;
+}
+
+.location {
+    display: flex;
+    align-items: center; 
+}
+
+.card-icon-location {
+    margin-right: 10px;
+}
+
+.card-icon-location p {
+    margin: 0;
+}
+
+.card-icon-location, .card-icon-map {
+    font-size: 20px;
+}
+
+/* .card-info .location {
+} */
+
+
+.card-info .card-icon-location {
+    margin-right: 15px;
+}
+
+.card-info .card-icon-map {
+    margin-right: 5px;
+}
+
+.card-info a {
+    text-decoration: none;
+    color: #575757;
+}
+
+.map-link {
+    color: inherit;
+    text-decoration: none; 
+    position: relative; 
+}
+
+.map-link:hover {
+    color: #575757;
+}
+
+.map-link::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: -1px; 
+    width: 0;
+    height: 2.2px;
+    background-color: #575757; 
+    transition: width 0.3s ease;
+}
+
+.map-link:hover::after {
+    width: 100%;
+}
+
+.card-content .card-btn {
+    display: inline-block;
+    padding: 8px;
+    background-color: gray;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.card-content .card-btn:hover {
+    background-color: #ccc;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+/* CARD END */
+
+/* FOOTER START */
+.footer {
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 50px 0;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 20%;
+    padding: 10px;
+}
+
+.col:nth-child(2), .col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.logo-footer {
+    width: 80px;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.col p {
+    color: #fff;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.col ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.footer form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+.footer form .vas {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.footer form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+.footer form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.footer form button .va {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.sosial-icons .vas {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.footer hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright .myname {
+    color: #fff;
+    font-weight: 800;
+}
+
+@media (max-width: 700px) {
+    .footer {
+        bottom: unset;
+    }
+
+    .col {
+        flex-basis: 100%;
+    }
+
+    .col:nth-child(2), .col:nth-child(3) {
+        flex-basis: 15%;
+    }
+}
+
+
+/* .footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa-brands {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-heart {
+    color: #f44336;
+} */
+ /* FOOTER END */

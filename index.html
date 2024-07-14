@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+
+    <!-- Swiper CSS -->
+     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <!-- NAVBAR START -->
+    <div class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" class=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown-prop" id="myLi">
+                        <input type="checkbox" id="btn">
+                        <label for="btn" href="#" onclick="myFunction()">PROPERTY</label>
+                        <i class="re fa-solid fa-caret-down"></i>
+                        <div class="dropdown-content">
+                            <a href="houses.html">Houses for Sale</a>
+                            <a href="#">Plots for Sale</a>
+                        </div>
+                    </li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li class="wa">
+                        <a href="https://wa.me/081325052585" target="_blank" class="contact-box"><i class="fa-brands fa-whatsapp" style="color: #fff;"></i> +62 813 2505 2585</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+
+        <div class="text-box">
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore blanditiis deleniti at maiores?</p>
+            <a href="#" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </div>
+<!-- NAVBAR END -->
+
+<!-- PROPERTY-SWIPER START -->
+    <div class="property">
+        <h1>Property</h1>
+        <p>Searching for the Best Places?</p>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-property">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/house1.jpg" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Rumah 1</h2>
+                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-property">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/house2.jpg" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Rumah 2</h2>
+                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-property">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/house3.jpg" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Rumah 3</h2>
+                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-property">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/house5.jpg" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Rumah 5</h2>
+                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-property">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/house6.jpg" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Rumah 6</h2>
+                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-property">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/house7.jpg" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Rumah 7</h2>
+                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-property">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/house8.jpg" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Rumah 8</h2>
+                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                </div>
+              
+
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+<!-- PROPERTY-SWIPER END -->
+
+<!-- ABOUT START -->
+    <div class="course">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi repellendus facere necessitatibus alias nihil.</p>
+    
+        
+        <div class="row">
+            <div class="property-col">
+                <h3>Lorem.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor enim cum alias?</p>
+            </div>
+            <div class="property-col">
+                <h3>Lorem.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor enim cum alias?</p>
+            </div>
+            <div class="property-col">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor enim cum alias?</p>
+            </div>
+        </div>
+    </div>
+<!-- ABOUT END -->
+
+<!-- CITY START -->
+    <div class="city">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi repellendus facere necessitatibus alias nihil.</p>
+    
+        <div class="row">
+            <div class="city-col">
+                <img src="img/building1.jpg">
+                <div class="layer">
+                    <h3>SOLO</h3>
+                </div>
+            </div>
+
+            <div class="city-col">
+                <img src="img/building2.jpg">
+                <div class="layer">
+                    <h3>BEKASI</h3>
+                </div>
+            </div>
+
+            <div class="city-col">
+                <img src="img/building3.jpg">
+                <div class="layer">
+                    <h3>SEMARANG</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- CITY END -->
+
+<!-- FOOTER START -->
+ <div class="footer">
+    <div class="row">
+        <div class="col">
+            <img src="img/logo.png" class="logo-footer">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque necessitatibus sint quae!</p>
+        </div>
+        <div class="col">
+            <h3>Office</h3>
+            <p>ITPL Road</p>
+            <p>Whitefield, Bangalore</p>
+            <p>Karnataka, PIN 500566, Jakarta</p>
+            <p class="email-id">garelsius@gmail.com</p>
+            <h4>+62812345678</h4>
+        </div>
+        <div class="col">
+            <h3>Links</h3>
+            <ul>
+                <li>HOME</li>
+                <li>PROPERTY</li>
+                <li>ABOUT</li>
+                <li>BLOG</li>
+                <li>CONTACT US</li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Newsletter</h3>
+            <form action="">
+                <i class="vas fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Enter your email id" required class="">
+                <button type="button"><i class="va fa-solid fa-arrow-right"></i></button>
+            </form>
+            <div class="sosial-icons">
+                <i class="vas fa-brands fa-facebook"></i>
+                <i class="vas fa-brands fa-instagram"></i>
+                <i class="vas fa-brands fa-twitter"></i>
+                <i class="vas fa-brands fa-whatsapp"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+    <p class="copyright">Copyright ©2024 All rights reserved | This template is made with by <span class="myname">Garelsius</span></i></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Swiper JS -->
+ <script src="js/swiper-bundle.min.js"></script>
+
+ <!-- JavaScript -->
+  <script src="js/script.js"></script>
+    <!-- JavaSript for Toggle Menu -->
+
+    <!-- FONTAWSOME -->
+    <script src="https://kit.fontawesome.com/f509727d61.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+        function myFunction() {
+        var x = document.getElementById("myLi");
+        var maxWidth = window.matchMedia("(max-width: 700px)");
+    
+        if (maxWidth.matches) {
+        // hanya menjalankan perubahan jika lebar layar <= 700px
+        if (x.style.marginBottom === "100px") {
+            x.style.marginBottom = "";
+        } else {
+            x.style.marginBottom = "100px";
+        }
+    }
+}
+
+    </script>
+
+</body>
+
+
+</html>
